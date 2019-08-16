@@ -96,7 +96,8 @@ public class Form extends Fragment implements View.OnClickListener {
                         long daysinmilli = hoursinmilli*1000;
 
                         long elapsedDays = diff/daysinmilli;
-                        futuredat.setText(""+elapsedDays);
+                        long daysleft = 5-elapsedDays;
+                        futuredat.setText(""+daysleft);
                     } else {
 
                     }

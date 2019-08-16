@@ -9,13 +9,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Notifications extends Fragment {
+public class Notifications extends Fragment  {
 
     ArrayList<String> Id = new ArrayList<String>();
     ArrayList<String> username = new ArrayList<String>();
@@ -43,9 +44,16 @@ public class Notifications extends Fragment {
             }
             CustomAdapter ca = new CustomAdapter(getActivity(),Id,username,daysleft);
             lv.setAdapter(ca);
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent,View view,int position,long id) {
+
+                }
+            });
             cursor.close();
             return view;
         }
-    }
+
+}
 
 
