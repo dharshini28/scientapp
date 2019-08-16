@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">dharshini</string>
+    <string-array name="department">
+        <item>Architecture</item>
+        <item>Chemical</item>
+        <item>Civil</item>
+        <item>Computer</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>ICE</item>
+        <item>Metallurgy</item>
+        <item>Production</item>
+    </string-array>
+    <string-array name="tool">
+        <item>Tool1</item>
+        <item>Tool2</item>
+        <item>Tool3</item>
+        <item>Tool4</item>
+        <item>Tool5</item>
+    </string-array>
+</resources>
