@@ -29,6 +29,15 @@
         android:ems="5"
         android:inputType="textPersonName"
         android:hint="Enter roll no" />
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et2"
+        android:layout_marginLeft="58dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:hint="Enter phone no" />
 
     <TextView
         android:id="@+id/tv1"
@@ -36,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Department"
-        android:layout_below="@+id/et2"
+        android:layout_below="@+id/et3"
         android:layout_marginLeft="40dp"
         />
 
@@ -70,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/spinner2"
         android:layout_centerHorizontal="true"
-        android:text="shac" />
+        android:text="" />
 
     <TextView
         android:id="@+id/tv4"
@@ -79,7 +88,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:layout_below="@id/tv3"
-        android:text="kdsbcavh" />
+        android:text="" />
 
     <Button
         android:id="@+id/b1"

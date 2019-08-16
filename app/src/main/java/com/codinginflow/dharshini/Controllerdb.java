@@ -13,7 +13,7 @@ public class Controllerdb extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query;
-        query = "CREATE TABLE IF NOT EXISTS UserDetails(Id INTEGER PRIMARY KEY AUTOINCREMENT,username VARCHAR,daysleft VARCHAR);";
+        query = "CREATE TABLE IF NOT EXISTS UserDetails(Id INTEGER PRIMARY KEY AUTOINCREMENT,username VARCHAR,rollno VARCHAR,phone VARCHAR,daysleft VARCHAR);";
         db.execSQL(query);
 
     }

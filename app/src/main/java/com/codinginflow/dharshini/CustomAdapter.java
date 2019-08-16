@@ -16,12 +16,17 @@ public class CustomAdapter extends BaseAdapter {
     SQLiteDatabase db;
     private ArrayList<String> Id = new ArrayList<String>();
     private ArrayList<String> username = new ArrayList<String>();
+    private ArrayList<String> rollno = new ArrayList<String>();
+    private ArrayList<String> phone = new ArrayList<String>();
     private ArrayList<String> daysleft = new ArrayList<String>();
+
     public CustomAdapter(Context  context,ArrayList<String> Id,ArrayList<String> username, ArrayList<String> daysleft)
     {
         this.mContext = context;
         this.Id = Id;
         this.username = username;
+        this.rollno = rollno;
+        this.phone = phone;
         this.daysleft = daysleft;
     }
 
@@ -48,6 +53,8 @@ public class CustomAdapter extends BaseAdapter {
             holder = new viewHolder();
             holder.id = (TextView) convertView.findViewById(R.id.tvid);
             holder.username = (TextView) convertView.findViewById(R.id.name);
+            holder.rollno = (TextView) convertView.findViewById(R.id.rollno);
+            holder.phone = (TextView) convertView.findViewById(R.id.phone);
             holder.daysleft = (TextView) convertView.findViewById(R.id.daysleft);
             convertView.setTag(holder);
         } else {
@@ -55,12 +62,16 @@ public class CustomAdapter extends BaseAdapter {
         }
         holder.id.setText(Id.get(position));
         holder.username.setText(username.get(position));
+        holder.rollno.setText(rollno.get(position));
+        holder.phone.setText(phone.get(position));
         holder.daysleft.setText(daysleft.get(position));
         return convertView;
     }
     public class viewHolder {
         TextView id;
         TextView username;
+        TextView rollno;
+        TextView phone;
         TextView daysleft;
 
     }
